@@ -5,7 +5,6 @@ import { fileURLToPath } from "node:url";
 const configDir = dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: join(configDir, "../.."),
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
