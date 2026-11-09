@@ -156,34 +156,60 @@ export const testimonials = [
   { name: "Dr. Amar Kale", role: "Clinic Director", rating: 5, text: "They understood trust, speed and local SEO. The admin dashboard saves our team time." }
 ];
 
-export const pricing = [
+export type PricingPlan = {
+  name: string;
+  price: string;
+  description: string;
+  featured: boolean;
+  features: string[];
+};
+
+export const pricing: PricingPlan[] = [
   {
     name: "Starter",
-    price: "₹9,999",
-    description: "Perfect for new local businesses.",
+    price: "₹12,000",
+    description: "Perfect for businesses starting their digital journey.",
     featured: false,
-    features: ["4 Pages", "Mobile Responsive", "Basic SEO", "Contact Form", "1 Month Support"]
+    features: [
+      "Static Website Development",
+      "Meta Ads Management",
+      "Instagram Handle Management",
+      "Google Business Profile Management",
+      "Instagram Content Creation: 4 reels/posters/shoots per month",
+      "WhatsApp Connectivity"
+    ]
   },
   {
     name: "Professional",
-    price: "₹16,999",
-    description: "Ideal for growing companies.",
+    price: "₹23,000",
+    description: "Designed for growing businesses ready to scale.",
     featured: true,
-    features: ["Up to 7 Pages", "Custom Design", "Advanced SEO", "CMS Integration", "Speed Optimization", "3 Months Support"]
-  },
-  {
-    name: "Premium",
-    price: "₹24,999",
-    description: "For serious brands scaling up.",
-    featured: false,
-    features: ["Unlimited Pages", "E-commerce Ready", "AI Chatbot", "Payment Gateway", "Custom Animations", "6 Months Support"]
+    features: [
+      "Dynamic Website Development",
+      "Contact Form Integration",
+      "Product Details Management",
+      "Meta Ads Management",
+      "Instagram Handle Management",
+      "Google Business Profile Management",
+      "Instagram Content Creation: 4 reels/posters/shoots per month",
+      "WhatsApp Connectivity"
+    ]
   },
   {
     name: "Enterprise",
-    price: "₹36,999",
-    description: "Complex custom web applications.",
+    price: "₹56,000",
+    description: "Advanced digital solutions for businesses with ambitious goals.",
     featured: false,
-    features: ["Custom Web App", "Advanced Integrations", "Dedicated Server", "Custom Dashboards", "24/7 Priority Support"]
+    features: [
+      "Custom Website Development",
+      "Advanced Integrations",
+      "Dedicated Server",
+      "Custom Dashboards",
+      "7 Calls Per Month",
+      "Meta Ads Management",
+      "Video Editing",
+      "Poster Editing"
+    ]
   }
 ];
 

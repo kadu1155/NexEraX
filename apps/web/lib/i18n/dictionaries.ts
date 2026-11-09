@@ -1,4 +1,102 @@
-import { services, portfolio, pricing, faqs, process, testimonials, reasons } from "../site-data";
+import { services, portfolio, pricing, faqs, process, testimonials, reasons, type PricingPlan } from "../site-data";
+
+export const pricingHi: PricingPlan[] = [
+  {
+    name: "Starter",
+    price: "₹12,000",
+    description: "डिजिटल यात्रा शुरू करने वाले व्यवसायों के लिए बिल्कुल सही।",
+    featured: false,
+    features: [
+      "स्टैटिक वेबसाइट डेवलपमेंट",
+      "मेटा विज्ञापन प्रबंधन (Meta Ads)",
+      "इंस्टाग्राम हैंडल प्रबंधन",
+      "गूगल बिजनेस प्रोफाइल प्रबंधन",
+      "इंस्टाग्राम कंटेंट निर्माण: प्रति माह 4 रील्स/पोस्टर/शूट्स",
+      "व्हाट्सएप कनेक्टिविटी"
+    ]
+  },
+  {
+    name: "Professional",
+    price: "₹23,000",
+    description: "आगे बढ़ने और विस्तार के लिए तैयार व्यवसायों के लिए डिज़ाइन किया गया।",
+    featured: true,
+    features: [
+      "डायनामिक वेबसाइट डेवलपमेंट",
+      "कॉन्टैक्ट फॉर्म इंटीग्रेशन",
+      "उत्पाद विवरण प्रबंधन (Product Details)",
+      "मेटा विज्ञापन प्रबंधन (Meta Ads)",
+      "इंस्टाग्राम हैंडल प्रबंधन",
+      "गूगल बिजनेस प्रोफाइल प्रबंधन",
+      "इंस्टाग्राम कंटेंट निर्माण: प्रति माह 4 रील्स/पोस्टर/शूट्स",
+      "व्हाट्सएप कनेक्टिविटी"
+    ]
+  },
+  {
+    name: "Enterprise",
+    price: "₹56,000",
+    description: "महत्वाकांक्षी लक्ष्यों वाले व्यवसायों के लिए उन्नत डिजिटल समाधान।",
+    featured: false,
+    features: [
+      "कस्टम वेबसाइट डेवलपमेंट",
+      "उन्नत एकीकरण (Advanced Integrations)",
+      "समर्पित सर्वर (Dedicated Server)",
+      "कस्टम डैशबोर्ड",
+      "प्रति माह 7 कॉल्स",
+      "मेटा विज्ञापन प्रबंधन (Meta Ads)",
+      "वीडियो एडिटिंग",
+      "पोस्टर एडिटिंग"
+    ]
+  }
+];
+
+export const pricingMr: PricingPlan[] = [
+  {
+    name: "Starter",
+    price: "₹12,000",
+    description: "आपला डिजिटल प्रवास सुरू करणाऱ्या व्यवसायांसाठी परिपूर्ण.",
+    featured: false,
+    features: [
+      "स्टॅटिक वेबसाइट डेव्हलपमेंट",
+      "मेटा जाहिरात व्यवस्थापन (Meta Ads)",
+      "इन्स्टाग्राम हँडल व्यवस्थापन",
+      "गुगल बिझनेस प्रोफाइल व्यवस्थापन",
+      "इन्स्टाग्राम कंटेंट निर्मिती: दरमहा 4 रील्स/पोस्टर्स/शूट्स",
+      "व्हॉट्सअ‍ॅप कनेक्टिव्हिटी"
+    ]
+  },
+  {
+    name: "Professional",
+    price: "₹23,000",
+    description: "व्यवसाय वाढवण्यासाठी आणि विस्तारण्यासाठी सज्ज असलेल्यांसाठी डिझाइन केलेले.",
+    featured: true,
+    features: [
+      "डायनॅमिक वेबसाइट डेव्हलपमेंट",
+      "कॉन्टॅक्ट फॉर्म इंटिग्रेशन",
+      "उत्पादन तपशील व्यवस्थापन (Product Details)",
+      "मेटा जाहिरात व्यवस्थापन (Meta Ads)",
+      "इन्स्टाग्राम हँडल व्यवस्थापन",
+      "गुगल बिझनेस प्रोफाइल व्यवस्थापन",
+      "इन्स्टाग्राम कंटेंट निर्मिती: दरमहा 4 रील्स/पोस्टर्स/शूट्स",
+      "व्हॉट्सअ‍ॅप कनेक्टिव्हिटी"
+    ]
+  },
+  {
+    name: "Enterprise",
+    price: "₹56,000",
+    description: "मोठी उद्दिष्टे असलेल्या व्यवसायांसाठी प्रगत डिजिटल सोल्युशन्स.",
+    featured: false,
+    features: [
+      "कस्टम वेबसाइट डेव्हलपमेंट",
+      "प्रगत एकत्रीकरण (Advanced Integrations)",
+      "समर्पित सर्व्हर (Dedicated Server)",
+      "कस्टम डॅशबोर्ड",
+      "दरमहा 7 कॉल्स",
+      "मेटा जाहिरात व्यवस्थापन (Meta Ads)",
+      "व्हिडिओ एडिटिंग",
+      "पोस्टर एडिटिंग"
+    ]
+  }
+];
 
 // Type definitions to ensure all dictionaries have the same structure
 export type Dictionary = {
@@ -47,7 +145,7 @@ export type Dictionary = {
     title: string;
     popular: string;
     button: string;
-    items: typeof pricing;
+    items: PricingPlan[];
   };
   process: {
     eyebrow: string;
@@ -229,7 +327,7 @@ export const hi: Dictionary = {
     title: "अपने विकास में निवेश करें",
     popular: "सबसे लोकप्रिय",
     button: "चुनें",
-    items: pricing
+    items: pricingHi
   },
   process: {
     eyebrow: "प्रक्रिया",
@@ -320,7 +418,7 @@ export const mr: Dictionary = {
     title: "तुमच्या वाढीमध्ये गुंतवणूक करा",
     popular: "सर्वाधिक लोकप्रिय",
     button: "निवडा",
-    items: pricing
+    items: pricingMr
   },
   process: {
     eyebrow: "प्रक्रिया",
